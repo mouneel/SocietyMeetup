@@ -2,6 +2,99 @@
     <wb-module deploy-name="mysociety">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="spring-context-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-context-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-tx-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-expression-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-aop-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-asm-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-asm-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jdbc-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-jdbc-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-core-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-webmvc-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-web-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-web-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-orm-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-orm-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-3.0.1.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/spring-beans-3.0.1.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="persistence-api-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Spring/persistence-api-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr-2.7.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/antlr-2.7.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.14.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/log4j-1.2.14.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jstl-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/jstl-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jta-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/jta-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester-1.8.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-digester-1.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-fileupload-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-fileupload-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-1.7.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-beanutils-1.7.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-1.5.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/asm-1.5.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-collections-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-io-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-email-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-email-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/dom4j-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="lucene-core-2.3.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/lucene-core-2.3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-2.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-collections-2.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cglib-2.1_3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/cglib-2.1_3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Other/aopalliance-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-lang-2.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang3-3.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/mysociety/lib/Common/commons-lang3-3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="mysociety"/>
         <property name="java-output-path" value="/mysociety/build/classes"/>
     </wb-module>

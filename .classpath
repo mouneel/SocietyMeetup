@@ -13,5 +13,36 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="lib/Spring/persistence-api-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-aop-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-asm-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-beans-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-context-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-core-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-expression-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-jdbc-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-orm-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-tx-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-web-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Spring/spring-webmvc-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-email-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-fileupload-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-io-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="lib/Common/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/Other/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/Other/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/Other/asm-1.5.3.jar"/>
+	<classpathentry kind="lib" path="lib/Other/cglib-2.1_3.jar"/>
+	<classpathentry kind="lib" path="lib/Other/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/Other/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/Other/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/Other/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="lib/Other/lucene-core-2.3.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
