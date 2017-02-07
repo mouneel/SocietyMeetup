@@ -7,6 +7,11 @@
 <title>Login Page - Login details</title>
 </head>
 <body>
-	Login Page!
+	User Login<br>
+	<form name="login" method="post" action="ValidateUser.html">
+		User  Name: <input type="text" id="id" name="userId" value="mtm"> <br>
+		Password: <input type="password" id="pass" name="password" value="mtm"><br>
+		<input type="submit" name="Login" id="login">
+	</form>	
 </body>
 </html>
