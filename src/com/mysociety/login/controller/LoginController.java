@@ -23,6 +23,12 @@ public class LoginController {
 	}
 	
 	
+	@RequestMapping(value = "/Register", method = RequestMethod.GET)
+	public ModelAndView RegisterPage() {
+		return new ModelAndView("login/Register");
+	}
+		
+	
 	@RequestMapping(value = "/ValidateUser", method = RequestMethod.POST)
 	public ModelAndView ValidateUser(HttpServletRequest request, @ModelAttribute("command") User userObj) {
 		
