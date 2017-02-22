@@ -13,6 +13,10 @@ import com.mysociety.login.domain.User;
 @Repository("UserDAO")
 public class UserDAOImpl implements UserDAO {
 
+	public void testmethod(){
+		
+	}
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 	

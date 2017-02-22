@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mysociety.login.dao.UserDAO;
+import com.mysociety.login.dao.UserDAOImpl;
 import com.mysociety.login.domain.User;
 
 @Service("LoginService")
@@ -17,7 +18,7 @@ public class LoginServiceImpl implements LoginService {
 		if(userObj == null || userObj.getUserId() == null){
 			return false;
 		}
-		
+
 		User dbUserDetails = userDAO.getUserByObject(userObj);
 		if (dbUserDetails != null
 				&& dbUserDetails.getPassword().equals(userObj.getPassword())) {

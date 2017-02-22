@@ -21,7 +21,18 @@ public class LoginController {
 	public ModelAndView LoginPage() {
 		return new ModelAndView("login/Login");
 	}
+<<<<<<< HEAD
 		
+=======
+	
+	
+	@RequestMapping(value = "/Register", method = RequestMethod.GET)
+	public ModelAndView RegisterPage() {
+		return new ModelAndView("login/Register");
+	}
+		
+	
+>>>>>>> origin/master
 	@RequestMapping(value = "/ValidateUser", method = RequestMethod.POST)
 	public ModelAndView ValidateUser(HttpServletRequest request, @ModelAttribute("command") User userObj) {
 		
