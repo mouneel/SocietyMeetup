@@ -21,8 +21,7 @@ public class LoginController {
 	public ModelAndView LoginPage() {
 		return new ModelAndView("login/Login");
 	}
-	
-	
+		
 	@RequestMapping(value = "/ValidateUser", method = RequestMethod.POST)
 	public ModelAndView ValidateUser(HttpServletRequest request, @ModelAttribute("command") User userObj) {
 		
