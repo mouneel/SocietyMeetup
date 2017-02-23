@@ -100,7 +100,7 @@
                                    <td align="center" class="registercls">
                                    	<a class="forgot-password-link" href="/housingsociety/PasswordRecover.action"><i class="fa fa-arrow-left" style="color:#FFEE99"></i>&nbsp;  I forgot my password</a></td>
 									<td align="center" class="registercls">
-									<a class="user-signup-link" href="/mysociety/Register.html"> I want to register &nbsp; <i class="fa fa-arrow-right" style="color:#CCFF77"></i></a></td>
+									<a class="user-signup-link" href="/mysociety/RegisterSociety.html"> I want to register &nbsp; <i class="fa fa-arrow-right" style="color:#CCFF77"></i></a></td>
 							  </tr>                                
                             </table>
                         </td>                       

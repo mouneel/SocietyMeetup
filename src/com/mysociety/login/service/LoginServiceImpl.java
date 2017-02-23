@@ -3,8 +3,9 @@ package com.mysociety.login.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.mysociety.login.dao.SocietyMasterDAO;
 import com.mysociety.login.dao.UserDAO;
-import com.mysociety.login.dao.UserDAOImpl;
+import com.mysociety.login.domain.SocietyMaster;
 import com.mysociety.login.domain.User;
 
 @Service("LoginService")
@@ -12,6 +13,9 @@ public class LoginServiceImpl implements LoginService {
 
 	@Autowired
 	private UserDAO userDAO;
+	
+	@Autowired
+	private SocietyMasterDAO societyMasterDAO;
 
 	@Override
 	public boolean validateUser(User userObj) {
@@ -28,9 +32,27 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public void registerUser(User userObj) {
-		// TODO Auto-generated method stub
-		
+	public boolean registerUser(User userObj) {
+		try{
+			userDAO.addUser(userObj);
+			System.out.println("User Created..!");
+		}catch(Exception ex){
+			System.out.println("Registration Failed..!");
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public boolean registerSociety(SocietyMaster societyMaster) {
+		try{
+			societyMasterDAO.createSociety(societyMaster);
+			System.out.println("Society Created..!");
+		}catch(Exception ex){
+			System.out.println("Registration Failed..!"+ex.toString());
+			return false;
+		}
+		return false;
 	}
 
 }

@@ -5,6 +5,7 @@ import java.util.List;
 import com.mysociety.login.domain.User;
 
 public interface UserDAO {
+	public void addUser(User userObj);
 	public User getUserById(String userId);
 	public User getUserByObject(User userObj);
 	public List<User> getAllUsers();

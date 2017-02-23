@@ -12,10 +12,6 @@ import com.mysociety.login.domain.User;
 @Transactional
 @Repository("UserDAO")
 public class UserDAOImpl implements UserDAO {
-
-	public void testmethod(){
-		
-	}
 	
 	@Autowired
 	private SessionFactory sessionFactory;
@@ -46,5 +42,10 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public void deleteUser(String userId) {
 		sessionFactory.getCurrentSession().createQuery("DELETE FROM User WHERE userid = '"+userId+"'").executeUpdate();
+	}
+
+	@Override
+	public void addUser(User userObj) {
+		sessionFactory.getCurrentSession().saveOrUpdate(userObj);
 	}
 }
