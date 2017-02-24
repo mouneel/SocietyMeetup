@@ -39,6 +39,9 @@ public class SocietyMaster {
 	@Column(name="SocietyContacts")
 	private String SocietyContacts;
 	
+	@Column(name="SocietyAddress")
+	private String societyAddress;
+	
 	@Column(name="City")
 	private String city;
 	
@@ -146,6 +149,13 @@ public class SocietyMaster {
 	public void setRegistrationDate(Date registrationDate) {
 		this.registrationDate = registrationDate;
 	}
-	
+
+	public String getSocietyAddress() {
+		return societyAddress;
+	}
+
+	public void setSocietyAddress(String societyAddress) {
+		this.societyAddress = societyAddress;
+	}
 	
 }

@@ -77,7 +77,7 @@
 	            <!-- Right Navigation -->
 	            <ul class="nav navbar-nav navbar-right">
 					<li >
-						<a href="Logout.html">
+						<a href="/mysociety/Logout.html">
 							<img class="img-circle" alt="Profile Image - Mouneel Mehta"  src="resources/images/ProfileImage_mtm.jpg" height="20px" width="20px">
 							<strong>Logout</strong>
 						</a>

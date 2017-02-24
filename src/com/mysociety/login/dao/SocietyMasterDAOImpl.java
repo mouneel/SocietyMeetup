@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.mysociety.login.domain.SocietyMaster;
-import com.mysociety.login.domain.User;
 
 @Transactional
 @Repository("SocietyMasterDAO")
@@ -36,6 +35,12 @@ public class SocietyMasterDAOImpl implements SocietyMasterDAO {
 
 	@Override
 	public List<SocietyMaster> getAllSocietyMaster() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SocietyMaster getSocietyByUserId(String userId) {
 		// TODO Auto-generated method stub
 		return null;
 	}

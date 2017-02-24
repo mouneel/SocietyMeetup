@@ -8,5 +8,7 @@ public interface SocietyMasterDAO {
 	public void createSociety(SocietyMaster societyMaster);
 	public void updateSociety(SocietyMaster societyMaster);
 	public void deleteSociety(SocietyMaster societyMaster);
+	
 	public List<SocietyMaster> getAllSocietyMaster();
+	public SocietyMaster getSocietyByUserId(String userId);
 }

@@ -1,7 +1,9 @@
 package com.mysociety.login.controller;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -17,10 +19,20 @@ import com.mysociety.login.service.LoginService;
 public class LoginController {
 	@Autowired
 	private LoginService loginService;
+	
+	@Autowired
+	private SessionFactory sessionFactory;
 
 	@RequestMapping(value = "/Login", method = RequestMethod.GET)
 	public ModelAndView LoginPage() {
 		return new ModelAndView("login/Login");
+	}
+	
+	@RequestMapping(value = "/Logout", method = RequestMethod.GET)
+	public ModelAndView LogoutPage(HttpServletRequest request) throws ServletException {
+		request.getSession().invalidate();
+		request.logout();
+		return new ModelAndView("login/Logout");
 	}
 
 	@RequestMapping(value = "/Register", method = RequestMethod.GET)
@@ -33,10 +45,22 @@ public class LoginController {
 			@ModelAttribute("command") SocietyMaster societyMaster, User userObj) {
 
 		userObj.setDescription("Admin User for Society - "+societyMaster.getShortName());
-		loginService.registerUser(userObj);
-		loginService.registerSociety(societyMaster);
-
-		return new ModelAndView("login/SocietyRegSuccess");
+		
+		if(loginService.checkIfUserIdUnique(userObj.getUserId())){
+			//TODO: error Message saying User already exists.
+		}
+		
+		if(loginService.checkIfSocietyNameUnique(societyMaster.getSocietyName())){
+			//TODO: error Message saying Society already exists.
+		}
+		
+		//loginService.registerUser(userObj);
+		if(loginService.registerSociety(societyMaster, userObj)){
+			return new ModelAndView("login/SocietyRegSuccess");
+		}else{
+			return new ModelAndView("login/RegistrationFailed");
+		}
+		
 	}
 
 	@RequestMapping(value = "/RegisterSociety", method = RequestMethod.GET)
@@ -48,15 +72,20 @@ public class LoginController {
 	public ModelAndView ValidateUser(HttpServletRequest request,
 			@ModelAttribute("command") User userObj) {
 
-		if (userObj.getUserId() == null || userObj.getPassword() == null) {
-			return new ModelAndView("login/LoginError");
-		}
-		boolean isValid = loginService.validateUser(userObj);
-		if (isValid) {
+		if (validateUser(userObj)) {
 			request.getSession().setAttribute("UserId", userObj.getUserId());
 			return new ModelAndView("Home");
 		} else {
 			return new ModelAndView("login/LoginError");
 		}
+	}
+	
+	private boolean validateUser(User userObj){
+		boolean isValid = false;
+		if (userObj.getUserId() == null || userObj.getPassword() == null) {
+			return isValid;
+		}
+		isValid = loginService.validateUser(userObj);
+		return isValid;
 	}
 }

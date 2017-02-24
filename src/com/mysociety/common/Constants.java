@@ -1,6 +1,7 @@
 package com.mysociety.common;
 
 public interface Constants {
+	//Page Constants
 	public static final String PAGE_NAME_HOME = "Home";
 	public static final String PAGE_NAME_MEMBERS = "Members";
 	public static final String PAGE_NAME_FEATURES = "Features";

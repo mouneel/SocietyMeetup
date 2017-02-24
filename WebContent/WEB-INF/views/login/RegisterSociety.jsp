@@ -17,7 +17,7 @@
 					Society Name *
 				</td>
 				<td>
-					<input type="text" name="SocietyName" id="societyName">
+					<input type="text" name="SocietyName" id="societyName" value="Vatika Cooperative Housing Society">
 				</td>
 			</tr>
 			<tr>
@@ -25,7 +25,7 @@
 					Short Name *
 				</td>
 				<td>
-					<input type="text" name="SocietyName" id="shortName">
+					<input type="text" name="ShortName" id="shortName" value="Vatika">
 				</td>
 			</tr>
 			
@@ -37,7 +37,7 @@
 					Registration No
 				</td>
 				<td>
-					<input type="text" name="RegistrationNo" id="registrationNo">
+					<input type="text" name="RegistrationNo" id="registrationNo" value="13579">
 				</td>
 			</tr>
 			<tr>
@@ -45,7 +45,23 @@
 					Registration Date (DD/MM/YYYY)
 				</td>
 				<td>
-					<input type="text" name="RegistrationDate" id="registrationDate">
+					<input type="text" name="RegistrationDate" id="registrationDate" value="22/02/2017">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Society Email
+				</td>
+				<td>
+					<input type="text" name="SocietyEmail" id="SocietyEmail" value="vatika@gmail.com">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Society Contact Nos
+				</td>
+				<td>
+					<input type="text" name="SocietyContacts" id="societyContacts" value="9898989898; 27509696">
 				</td>
 			</tr>
 			<tr>
@@ -53,7 +69,7 @@
 					Address
 				</td>
 				<td>
-					<input type="text" name="SocietyAddress" id="societyAddress">
+					<input type="text" name="SocietyAddress" id="societyAddress" value="Vatika, Near Ashtvinayak Chowk, Balewadi">
 				</td>
 			</tr>
 			<tr>
@@ -61,7 +77,7 @@
 					City
 				</td>
 				<td>
-					<input type="text" name="City" id="city">
+					<input type="text" name="City" id="city" value="Pune">
 				</td>
 			</tr>
 			<tr>
@@ -69,7 +85,7 @@
 					Pincode
 				</td>
 				<td>
-					<input type="text" name="Pincode" id="pincode">
+					<input type="text" name="Pincode" id="pincode" value="411045">
 				</td>
 			</tr>
 			
@@ -82,7 +98,7 @@
 					UserId (Admin)*
 				</td>
 				<td>
-					<input type="text" name="userId" id="userId">
+					<input type="text" name="userId" id="userId" value="Vatika">
 				</td>
 			</tr>
 			<tr>
@@ -90,7 +106,7 @@
 					Password *
 				</td>
 				<td>
-					<input type="password" name="Password" id="password">
+					<input type="password" name="Password" id="password" value="123">
 				</td>
 			</tr>
 			<tr>
@@ -98,7 +114,7 @@
 					Name *
 				</td>
 				<td>
-					<input type="text" name="ContactPerson" id="contactPerson">
+					<input type="text" name="ContactPerson" id="contactPerson" value="Mounneel Mehta">
 				</td>
 			</tr>
 			<tr>
@@ -106,7 +122,7 @@
 					Designation *
 				</td>
 				<td>
-					<input type="text" name="Designation" id="designation">
+					<input type="text" name="Designation" id="designation" value="Chairman">
 				</td>
 			</tr>
 			

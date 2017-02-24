@@ -1,5 +1,6 @@
 package com.mysociety.login.service;
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +11,7 @@ import com.mysociety.login.domain.User;
 
 @Service("LoginService")
 public class LoginServiceImpl implements LoginService {
-
+	
 	@Autowired
 	private UserDAO userDAO;
 	
@@ -44,14 +45,35 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public boolean registerSociety(SocietyMaster societyMaster) {
+	public boolean registerSociety(SocietyMaster societyMaster, User userObj) {
 		try{
+			//TODO: IMPORTNAT: Add in transaction
+			userDAO.addUser(userObj);
+			System.out.println("User Created..!");
 			societyMasterDAO.createSociety(societyMaster);
 			System.out.println("Society Created..!");
 		}catch(Exception ex){
 			System.out.println("Registration Failed..!"+ex.toString());
 			return false;
 		}
+		return true;
+	}
+
+	@Override
+	public String getSocietyName(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean checkIfUserIdUnique(String userId) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkIfSocietyNameUnique(String societyName) {
+		// TODO Auto-generated method stub
 		return false;
 	}
 

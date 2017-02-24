@@ -36,7 +36,7 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public void updateUserDetails(User userObj) {
-		sessionFactory.getCurrentSession().saveOrUpdate(userObj);
+		sessionFactory.getCurrentSession().update(userObj);
 	}
 
 	@Override
@@ -46,6 +46,6 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public void addUser(User userObj) {
-		sessionFactory.getCurrentSession().saveOrUpdate(userObj);
+		sessionFactory.getCurrentSession().save(userObj);
 	}
 }
