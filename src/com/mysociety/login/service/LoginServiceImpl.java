@@ -1,9 +1,10 @@
 package com.mysociety.login.service;
 
-import org.hibernate.SessionFactory;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.mysociety.common.LoggerUtil;
 import com.mysociety.login.dao.SocietyMasterDAO;
 import com.mysociety.login.dao.UserDAO;
 import com.mysociety.login.domain.SocietyMaster;
@@ -17,6 +18,8 @@ public class LoginServiceImpl implements LoginService {
 	
 	@Autowired
 	private SocietyMasterDAO societyMasterDAO;
+	
+	private static Logger logger = LoggerUtil.getInstance().getLogger();
 
 	@Override
 	public boolean validateUser(User userObj) {
@@ -47,13 +50,15 @@ public class LoginServiceImpl implements LoginService {
 	@Override
 	public boolean registerSociety(SocietyMaster societyMaster, User userObj) {
 		try{
+			logger.debug("User Registration for UserId: "+userObj.getUserId());
 			//TODO: IMPORTNAT: Add in transaction
 			userDAO.addUser(userObj);
 			System.out.println("User Created..!");
 			societyMasterDAO.createSociety(societyMaster);
 			System.out.println("Society Created..!");
 		}catch(Exception ex){
-			System.out.println("Registration Failed..!"+ex.toString());
+			logger.error("LoginServiceImpl#registerSociety(): Registration Failed for user: ["+userObj.getUserId()+"] & Society Name: ["+societyMaster.getSocietyName()+"]");
+			logger.error("Error:"+ex.toString());
 			return false;
 		}
 		return true;

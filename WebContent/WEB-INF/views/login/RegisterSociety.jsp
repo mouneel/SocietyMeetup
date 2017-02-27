@@ -130,10 +130,10 @@
 			<tr><td colspan="2"></td></tr>
 			<tr>
 				<td>
-					<input type="submit" name="Register" id="submit"> 
+					<input type="submit" name="Submit" id="submit"> 
 				</td>
 				<td>
-					<input type="button" name="Clear" id="clear">
+					<input type="reset" name="Cancel" id="Cancel" >
 				</td>
 			</tr>
 			
